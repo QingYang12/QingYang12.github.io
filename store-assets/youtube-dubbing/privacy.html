@@ -1,0 +1,21 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>YouTube 简易配音 隐私政策</title><style>body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC',sans-serif;max-width:900px;margin:40px auto;padding:0 24px;color:#243047;line-height:1.75}h1{color:#1d4ed8}h2{margin-top:28px;color:#334155}section{background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:18px;margin:16px 0}code{background:#e2e8f0;padding:2px 5px;border-radius:4px}.muted{color:#64748b;font-size:14px}li{margin:5px 0}</style></head><body>
+<h1>YouTube 简易配音 隐私政策</h1><p class="muted">生效日期：2026-08-14　版本：2.0</p>
+<section><strong>核心承诺</strong><p>本扩展不出售个人信息、不投放广告、不做跨站跟踪，不收集也不上传任何视频内容、字幕文本或个人身份信息。仅向开发者授权服务器发送随机安装标识和授权令牌用于免费次数与付费解锁核验，付款由 PayPal 处理。</p></section>
+<h2>1. 扩展用途</h2><p>在 YouTube 视频页为用户提供一键翻译与配音：读取页面公开字幕，调用公开翻译接口翻译为所选语言，再用浏览器内置语音合成朗读，并可选显示翻译字幕。</p>
+<h2>2. 本地处理与存储</h2><p>语言、声音、语速、音量等偏好设置，以及免费使用次数、随机安装标识和付费授权令牌保存在本机 <code>chrome.storage.local</code>。字幕与翻译文本仅在页面内存中处理，不会被扩展记录或上传。</p>
+<h2>3. 外部服务与数据传输</h2><ul>
+<li><strong>YouTube</strong>：仅读取用户当前观看视频的公开字幕数据，不读取账号信息。</li>
+<li><strong>公开翻译接口</strong>：将待翻译文本片段发送至 Google/Bing 公开翻译接口以获取译文；传输内容为用户主动触发配音的视频字幕文本，不包含账号或个人身份信息。</li>
+<li><strong>授权服务器（test.wanghaonet.com）</strong>：仅发送随机安装标识（一串随机十六进制字符）与授权令牌，用于核验免费次数后的解锁状态；不包含姓名、邮箱等任何个人信息。</li>
+<li><strong>PayPal</strong>：解锁付费（1 美元，可选、非强制）在 PayPal 页面完成。开发者服务器保存 PayPal 订单号、金额、货币、付款状态和对应的随机安装标识，不接触 PayPal 密码或银行卡信息。</li>
+</ul>
+<h2>4. 权限用途</h2><ul>
+<li><code>storage</code>：保存偏好设置、使用次数、随机安装标识与授权令牌。</li>
+<li><code>activeTab</code> / <code>scripting</code>：仅在当前 YouTube 视频页注入配音与字幕界面。</li>
+<li><code>*://*.youtube.com/*</code>：读取当前视频字幕并控制播放器音量。</li>
+<li><code>*://translate.googleapis.com/*</code>、<code>*://www.bing.com/*</code>、<code>*://cn.bing.com/*</code>、<code>*://aidemo.youdao.com/*</code>：调用公开翻译接口获取译文。</li>
+<li><code>https://test.wanghaonet.com/*</code>：核验付费解锁授权状态。</li>
+</ul>
+<h2>5. 不收集的内容</h2><p>本扩展不收集浏览历史、Cookie、账号凭据、精确位置或任何个人身份信息；使用次数仅保存在本机。</p>
+<h2>6. 数据删除与联系</h2><p>卸载扩展即可删除全部本地数据。如需咨询或删除与付款订单相关的记录，请联系：wanghaonet@163.com。</p>
+</body></html>
