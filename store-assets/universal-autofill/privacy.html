@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>表单测试数据助手 隐私政策</title>
+  <style>body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-serif;max-width:880px;margin:40px auto;padding:0 24px;color:#243047;line-height:1.75}h1{color:#1d4ed8}h2{margin-top:26px}section{background:#eff6ff;border:1px solid #bfdbfe;border-radius:12px;padding:18px}.muted{color:#64748b}code{background:#f1f5f9;padding:2px 5px;border-radius:4px}</style>
+</head>
+<body>
+  <h1>表单测试数据助手 隐私政策</h1>
+  <p class="muted">生效日期：2026-07-23　版本：2.1.0</p>
+  <section>本扩展用于网页表单的开发与 QA 测试。扩展不保存、上传或出售用户在网页中输入的真实表单内容，不投放广告。</section>
+  <h2>表单结构扫描</h2>
+  <p>只有当用户点击扩展按钮、右键菜单或快捷键时，内容脚本才会处理当前页面的网址、表单字段类型、名称、可读标签、必填状态及是否为空。扩展会计算标签覆盖率，并可由用户主动导出不含字段实际值的 JSON QA 报告。扫描结果不上传。</p>
+  <h2>虚拟测试数据</h2>
+  <p>扩展只对空字段生成和填入虚拟值，不覆盖用户已输入的内容。密码、验证码、支付、银行卡及安全码等敏感字段始终跳过。扩展不点击提交按钮，不自动发送表单。</p>
+  <h2>本地设置</h2>
+  <p><code>chrome.storage.local</code> 仅保存测试数据语言、标准/边界数据集、复选框偏好、预览标签偏好和“仅填必填字段”偏好。其中不包含姓名、邮箱、电话、地址或页面表单值。</p>
+  <h2>权限与代码</h2>
+  <p><code>contextMenus</code> 用于提供扫描、预览、填充与清除的用户操作入口；HTTP/HTTPS 网站访问权限用于在表单所在页面运行静态内容脚本。所有 JavaScript、HTML 和 CSS 均随安装包提供，不连接开发者服务器，不加载或执行远程代码。</p>
+</body>
+</html>

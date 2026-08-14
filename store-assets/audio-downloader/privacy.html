@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>音频交付质检台 隐私政策</title>
+  <style>body{max-width:860px;margin:46px auto;padding:0 24px;color:#243047;font:16px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-serif}h1{color:#1d4ed8}h2{margin-top:28px}.note{padding:16px 18px;border:1px solid #bae6fd;border-left:5px solid #0891b2;border-radius:10px;background:#ecfeff}.muted{color:#64748b;font-size:14px}code{padding:2px 5px;border-radius:4px;background:#eef2ff}</style>
+</head>
+<body>
+  <h1>音频交付质检台隐私政策</h1>
+  <p class="muted">生效日期：2026-07-24　版本：2.0.0</p>
+  <p class="note"><strong>核心承诺：</strong>用户主动选择的音频文件只在当前浏览器标签页本地解码和分析，不上传、不持久保存，也不会发送到开发者或第三方服务器。</p>
+  <h2>1. 单一用途</h2>
+  <p>本扩展用于对用户主动选择的本地音频文件进行技术质量筛查，展示波形、峰值、RMS、峰均比、削波样本、静音比例、首尾静音、直流偏移和声道平衡，并生成本地 JSON 报告。</p>
+  <h2>2. 本地处理的数据</h2>
+  <p>扩展会在当前页面内存中处理文件名称、文件大小、媒体类型、解码后的音频样本、时长、采样率和声道数量。分析报告仅包含技术指标和质量提示，不包含原始音频样本。</p>
+  <h2>3. 保存、导出与删除</h2>
+  <p>扩展不会使用 <code>chrome.storage</code>、IndexedDB 或开发者服务器保存音频文件或报告。只有用户主动点击“导出 JSON 报告”时，浏览器才会把技术报告保存为本地文件。关闭分析标签页、刷新页面或检查另一个文件后，内存中的音频数据会被释放。</p>
+  <h2>4. 网站与网络访问</h2>
+  <p>扩展不申请网站访问权限，不读取网页、浏览历史、Cookie、网页音频地址或其他标签页内容。扩展不会发起网络请求，也不提供网络音频嗅探或下载功能。</p>
+  <h2>5. 数据共享与有限使用</h2>
+  <p>扩展不出售、共享或传输用户数据，不使用广告、统计分析、用户画像或跨站跟踪。用户选择的音频只用于用户主动请求的本地质量检查，不允许开发者或其他人员查看。</p>
+  <h2>6. 远程代码</h2>
+  <p>全部 JavaScript、HTML、CSS、分析规则和图片均包含在扩展安装包中，不下载或执行远程代码。</p>
+  <h2>7. 检测范围</h2>
+  <p>质量分数和提示是基于本地抽样规则的快速筛查结果，不是 LUFS、广播合规、母带认证或主观音质结论，也不能替代专业音频检测软件。</p>
+  <h2>8. 联系方式</h2>
+  <p>如对本政策有疑问，请通过开发者在 Chrome 应用商店产品页面中公布的支持方式联系。</p>
+</body>
+</html>

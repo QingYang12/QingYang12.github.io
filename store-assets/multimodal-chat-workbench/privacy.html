@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI 多模型图文对话工作台隐私政策</title>
+<style>body{max-width:900px;margin:42px auto;padding:0 24px;color:#25354b;background:#f3f6fb;font:15px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-serif}main{padding:30px;border:1px solid #dce4f0;border-radius:18px;background:#fff}h1{margin-top:0;color:#4a49a8}h2{margin-top:27px;color:#303276}.summary{padding:15px 17px;border-left:4px solid #6b66d9;background:#f0efff;border-radius:9px}.muted{color:#6d7890}code{background:#eef1f7;padding:2px 5px;border-radius:5px}</style>
+</head><body><main>
+<h1>AI 多模型图文对话工作台隐私政策</h1><p class="muted">生效日期：2026 年 8 月 13 日　版本：1.0.4</p>
+<p class="summary">只有在用户点击发送后，扩展才会把所选模式需要的文字、图片和对话上下文发送给 AI 服务。</p>
+<h2>1. 免费模式</h2><p>选择“免费 · qwen3.7-plus”时，用户提交的提示、所选图片、系统提示和必要的最近对话上下文会通过加密 HTTPS 发送至 <code>test.wanghaonet.com</code>，再发送给配置的 AI 模型提供商以生成回复。图片仅在用户主动选择后发送。</p>
+<h2>2. CID、免费额度与安全记录</h2><p>扩展首次安装时随机生成一个 CID 和私有校验令牌，并通过 Chrome 的扩展本地存储保存在当前浏览器配置文件中。CID 不包含姓名、邮箱或电话号码。免费请求会向服务端发送应用标识、CID、校验令牌和用户主动提交的内容；服务端还会处理来源 IP、日期和请求次数，用于免费额度、后续个性化服务、安全防护、运行统计和故障排查。扩展会把同一 CID 显式提交给实验分桶接口，并缓存对应的实验域、桶、槽位和分配版本，用于比较不同功能方案的效果。卸载扩展会清除本地 CID，再次安装会生成新的 CID。</p>
+<h2>3. 自己的 API 模式</h2><p>用户选择自己的 API 时，提示、图片和上下文会直接发送至用户填写的第三方 API 地址。API Key、地址、模型设置和会话历史保存在当前浏览器，不会发送给开发者服务器。相应第三方对数据的处理受其自身隐私政策约束。</p>
+<h2>4. 本地数据</h2><p>会话标题、消息、配置、CID 和校验令牌保存在当前浏览器。用户可以删除会话、导出数据，或通过卸载扩展清除本地数据。</p>
+<h2>5. 权限和数据限制</h2><p><code>storage</code> 权限仅用于持久保存随机 CID 和校验令牌。固定网站访问权限只用于免费服务；可选网站权限仅在用户配置并授权自己的 API 地址时使用。扩展不读取浏览历史、Cookie、支付信息或未由用户选择的本地文件。</p>
+<h2>6. 数据共享与出售</h2><p>数据仅在提供所选 AI 功能所必需的范围内交由网关和模型服务商处理。开发者不出售用户数据，不用于广告、信用评估或与产品无关的用途。</p>
+<h2>7. 联系与删除</h2><p>用户可删除本地会话或卸载扩展。有关服务端额度记录或隐私问题，请通过 Chrome 应用商店商品页面显示的支持邮箱联系开发者。</p>
+</main></body></html>

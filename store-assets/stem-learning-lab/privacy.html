@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI 数理学习讲解与测验工作台隐私政策</title>
+<style>body{max-width:900px;margin:42px auto;padding:0 24px;color:#253747;background:#f3f7f9;font:15px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-serif}main{padding:30px;border:1px solid #d8e6e8;border-radius:18px;background:#fff}h1{margin-top:0;color:#177881}h2{margin-top:27px;color:#145a62}.summary{padding:15px 17px;border-left:4px solid #20a4ad;background:#eaf8f8;border-radius:9px}.muted{color:#6b7a85}code{background:#edf4f5;padding:2px 5px;border-radius:5px}</style>
+</head><body><main>
+<h1>AI 数理学习讲解与测验工作台隐私政策</h1><p class="muted">生效日期：2026 年 8 月 13 日　版本：1.1.3</p>
+<p class="summary">公式浏览和函数绘图完全在本地进行；只有用户点击 AI 讲解、出题或判题时才发送相关学习内容。</p>
+<h2>1. 本地功能和数据</h2><p>公式库、函数计算和绘图在扩展本地运行。问题、讲解、测验答案、成绩、建议和配置保存在当前浏览器，并可由用户导入、导出或清空。</p>
+<h2>2. AI 请求</h2><p>AI 操作会发送用户输入的问题、选择的公式、练习答案、必要上下文，以及用户主动上传的图片或可读取文字材料。免费模式通过 <code>test.wanghaonet.com</code> 调用 qwen3.7-plus；自己的 API 模式直接调用用户指定的兼容服务，Key 仅保存在本机。</p>
+<h2>3. CID、免费额度与安全记录</h2><p>扩展首次安装时随机生成一个 CID 和私有校验令牌，并通过 Chrome 的扩展本地存储保存在当前浏览器配置文件中。CID 不包含姓名、邮箱或电话号码。免费 AI 请求会发送应用标识、CID 和校验令牌；服务端还会处理来源 IP、日期和请求次数，用于免费额度、后续个性化服务、安全防护、运行统计和故障排查。扩展会把同一 CID 显式提交给实验分桶接口，并缓存对应的实验域、桶、槽位和分配版本，用于比较不同功能方案的效果。卸载扩展会清除本地 CID。</p>
+<h2>4. 权限和文件</h2><p><code>storage</code> 权限仅用于持久保存随机 CID 和校验令牌。固定网站权限只用于免费服务；可选网站权限只在用户确认自己的 API 域名时使用。文件仅在用户主动选择后读取。扩展不读取浏览历史、Cookie、账号或未选择的文件。</p>
+<h2>5. 教育免责声明</h2><p>AI 生成的答案可能不完整或有误，应由用户核验，不应作为高风险专业决定的唯一依据。</p>
+<h2>6. 共享与出售</h2><p>学习内容仅在生成用户请求结果所需范围内交由网关和模型服务商处理。开发者不出售数据，不用于广告、信用评估或无关画像。</p>
+<h2>7. 联系方式</h2><p>如需咨询隐私或删除服务端额度记录，请通过 Chrome 应用商店商品页面显示的开发者支持邮箱联系我们。</p>
+</main></body></html>

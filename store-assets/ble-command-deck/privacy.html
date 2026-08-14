@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BLE 指令面板与串口终端隐私政策</title>
+  <style>body{max-width:900px;margin:42px auto;padding:0 24px;color:#183047;background:#eef6f9;font:15px/1.78 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-serif}main{padding:32px;border:1px solid #cfe1e8;border-radius:18px;background:#fff;box-shadow:0 16px 44px rgba(16,72,96,.09)}h1{margin-top:0;color:#087e9b}h2{margin-top:28px;color:#174d6a}.summary{padding:15px 17px;border-left:4px solid #06b6d4;border-radius:9px;background:#e9fafd}.muted{color:#6a7d8c}code{padding:2px 5px;border-radius:5px;background:#eaf4f7}</style>
+</head>
+<body><main>
+  <h1>BLE 指令面板与串口终端隐私政策</h1>
+  <p class="muted">生效日期：2026 年 7 月 27 日　版本：1.0.0</p>
+  <p class="summary">本扩展不收集或上传个人数据。设备选择由 Chrome 提供的蓝牙选择器完成，指令与设备通知只在用户设备和其主动连接的 BLE 外设之间传输。</p>
+  <h2>1. 产品用途</h2>
+  <p>本扩展用于连接用户主动选择的 Bluetooth Low Energy（BLE）GATT/UART 外设，并通过方向键、ABXY 按键、自定义指令网格和收发终端传输用户配置的数据。它不支持经典蓝牙 SPP，也不会在后台扫描附近设备。</p>
+  <h2>2. 设备访问</h2>
+  <p>只有在用户点击“选择 BLE 设备”后，Chrome 才会显示系统设备选择器。扩展使用 Web Bluetooth API 访问用户在该选择器中明确授权的设备、服务与特征值。设备名称、连接状态和收到的数据仅在当前扩展页面中用于显示和操作，不会发送给开发者或第三方。</p>
+  <h2>3. 本地保存的数据</h2>
+  <p>用户主动保存时，配置名称、GATT 服务 UUID、特征 UUID、数据格式、分包设置、自定义按钮名称与发送代码会存入扩展自身的浏览器本地存储。终端记录仅保留在当前页面会话；重新载入页面后不会恢复。导入和导出 JSON 仅在用户明确操作时发生。</p>
+  <h2>4. Chrome 权限</h2>
+  <p>扩展的清单文件不申请 <code>permissions</code>、<code>host_permissions</code> 或网站访问权限。BLE 设备访问由浏览器的 Web Bluetooth 授权流程管理。扩展不读取网页内容、浏览历史、Cookie、账号、密码、位置、摄像头或麦克风。</p>
+  <h2>5. 网络、共享与出售</h2>
+  <p>扩展不连接开发者服务器，不包含广告、分析 SDK 或远程代码，不出售、共享或上传用户数据。BLE 指令只发送到用户主动选择且有权控制的本地外设。</p>
+  <h2>6. 数据控制与删除</h2>
+  <p>用户可以在扩展中逐项删除已保存配置，也可以通过 Chrome 的扩展管理页面清除扩展数据。卸载扩展会删除其浏览器本地数据；用户自行导出的 JSON 文件可在操作系统中删除。</p>
+  <h2>7. 安全提示</h2>
+  <p>请仅连接本人拥有或获得授权的设备，并在发送前核对指令代码。对于可能驱动电机、继电器或其他实体装置的命令，请先设置设备侧的限位、急停和安全机制。</p>
+  <h2>8. 联系方式</h2>
+  <p>如对本政策有疑问，请通过 Chrome 应用商店商品页面显示的开发者支持邮箱联系我们。</p>
+</main></body></html>

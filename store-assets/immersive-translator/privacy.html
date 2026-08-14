@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>沉浸式实时翻译6 隐私政策</title>
+  <style>
+    body{max-width:900px;margin:42px auto;padding:0 24px;color:#25364d;background:#f2f7fb;font:15px/1.78 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-serif}
+    main{padding:30px;border:1px solid #d8e5ef;border-radius:18px;background:#fff;box-shadow:0 16px 44px rgba(35,75,115,.08)}
+    h1{margin-top:0;color:#176da1}h2{margin-top:27px;color:#24567c}.summary{padding:15px 17px;border-left:4px solid #2e9ed1;border-radius:9px;background:#eaf7fd}.muted{color:#687a90}code{padding:2px 5px;border-radius:5px;background:#edf3f8}li{margin:7px 0}
+  </style>
+</head>
+<body>
+<main>
+  <h1>沉浸式实时翻译6 隐私政策</h1>
+  <p class="muted">生效日期：2026 年 8 月 7 日　版本：1.0.0</p>
+  <p class="summary">扩展仅为提供用户主动选择的网页翻译功能而处理必要文本。开发者不出售用户数据，不投放广告，也不将翻译内容用于用户画像、信用评估或与翻译无关的用途。</p>
+
+  <h2>1. 扩展处理的数据</h2>
+  <p>当用户点击翻译、开启网页双语翻译、使用划词翻译或按下输入框翻译快捷键时，扩展会读取完成该次翻译所需的网页文字、用户选中的文字或当前输入框文字。扩展不会主动读取密码框、支付卡信息、浏览历史、Cookie、位置、摄像头或麦克风数据。</p>
+
+  <h2>2. 翻译服务与数据传输</h2>
+  <p>为生成翻译结果，待翻译文字会通过 HTTPS 发送给用户在设置中选择的翻译服务：</p>
+  <ul>
+    <li>Google Translate；</li>
+    <li>Microsoft Bing / Edge Translate；</li>
+    <li>DeepL；</li>
+    <li>用户自行配置的 OpenAI 兼容 API 服务。</li>
+  </ul>
+  <p>这些第三方服务对数据的处理受其各自的服务条款和隐私政策约束。开发者不通过自己的服务器中转、存储或查看翻译文字。</p>
+
+  <h2>3. 本地保存的数据</h2>
+  <p>扩展使用 Chrome 的 <code>storage</code> 功能保存翻译服务、目标语言、显示方式、快捷设置以及用户自行填写的 OpenAI 兼容 API 地址、模型名称和 API Key。这些设置保存在 Chrome 扩展存储中；使用 Chrome 同步功能时，部分设置可能通过用户的 Google 账号在其设备之间同步。翻译正文和翻译结果不会被扩展持久保存。</p>
+
+  <h2>4. 权限用途</h2>
+  <ul>
+    <li><code>storage</code>：保存上述翻译设置和用户配置。</li>
+    <li><code>activeTab</code>、<code>scripting</code> 与网站访问范围：在用户访问的网页中读取待翻译文字并显示双语结果。</li>
+    <li><code>contextMenus</code>：提供用户主动触发的右键翻译入口。</li>
+    <li><code>declarativeNetRequest</code> 与主机访问权限：向用户选择的翻译提供商发送请求，并设置服务兼容所需的请求头。</li>
+  </ul>
+
+  <h2>5. 数据共享、出售与远程代码</h2>
+  <p>除把必要文字发送给用户选择的翻译提供商外，开发者不会共享或出售用户数据。扩展不包含广告或分析 SDK，不跟踪用户跨网站活动。全部可执行 JavaScript 随扩展安装包提供，不从远程服务器加载执行代码。</p>
+  <p>本扩展对从 Chrome API 获得的信息的使用和转移遵守 Chrome Web Store 用户数据政策，包括其“有限使用”要求。数据仅用于提供用户可见的翻译功能；除提供该功能、安全或法律要求外不会转移，不用于个性化广告，也不会允许人工读取用户翻译内容。</p>
+
+  <h2>6. 数据保留与删除</h2>
+  <p>用户可在扩展选项页修改或清除翻译设置及 API Key。也可以在 Chrome 中清除该扩展的数据或卸载扩展，以删除扩展保存的本地配置。第三方翻译服务的数据保留规则由相应服务商决定。</p>
+
+  <h2>7. 政策变更与联系方式</h2>
+  <p>如本扩展的数据处理方式发生重大变化，本页面会更新生效日期并随产品更新进行说明。如有隐私问题，请通过 Chrome 应用商店商品页面显示的开发者支持方式联系我们。</p>
+</main>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>网页文档资源检查与下载隐私政策</title>
+  <style>
+    body{max-width:900px;margin:42px auto;padding:0 24px;color:#1d3340;background:#eef5f5;font:15px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-serif}
+    main{padding:32px;border:1px solid #d4e2e3;border-radius:18px;background:#fff;box-shadow:0 16px 45px rgba(29,51,64,.06)}
+    h1{margin-top:0;color:#176c78}h2{margin-top:28px;color:#165761}.summary{padding:15px 17px;border-left:4px solid #2ca1a8;border-radius:8px;background:#edf9f8}.muted{color:#6a7b84}code{padding:2px 5px;border-radius:5px;background:#eef3f4}
+  </style>
+</head>
+<body><main>
+  <h1>网页文档资源检查与下载隐私政策</h1>
+  <p class="muted">生效日期：2026 年 7 月 29 日　版本：1.0.1</p>
+  <p class="summary">本扩展只在用户点击扩展图标时检查当前标签页中的文档资源。扫描、筛选和清单生成均在浏览器本地完成。</p>
+  <h2>1. 处理的数据</h2>
+  <p>扩展会在用户当前打开的网页中临时读取链接地址、链接文字、嵌入对象地址、资源类型以及本页已加载资源的地址，用于识别 PDF、Word、Excel、PowerPoint、文本和电子书文件。结果仅显示在扩展弹窗内。</p>
+  <p>当当前页面是夸克等受支持的在线文档预览页时，扩展可能请求该来源网站自己的公开文档元数据接口，以识别文件格式、标题、页数和文件大小。请求不会经过开发者服务器；受登录、购买或下载规则保护的原文件仍需用户在来源网站按其规则获取。</p>
+  <h2>2. 下载与导出</h2>
+  <p>只有用户主动勾选文档并点击下载后，扩展才会把对应公开链接交给 Chrome 下载管理器。复制链接和 CSV 清单导出也仅由用户主动触发。扩展不会上传、代理或保存文档内容。</p>
+  <h2>3. 本地存储</h2>
+  <p><code>storage</code> 权限只用于保存用户选择的类型筛选偏好，以及最近一次扫描的页面地址、时间和资源数量摘要。这些信息保存在浏览器本地，可通过卸载扩展清除。</p>
+  <h2>4. 权限用途</h2>
+  <p><code>activeTab</code> 只在用户点击图标后临时授权当前页面；<code>scripting</code> 用于执行本地文档链接检查；<code>downloads</code> 用于下载用户明确选择的文件及导出 CSV 清单；<code>storage</code> 用于上述本地偏好和扫描摘要。扩展不申请浏览历史、Cookie、账户或全站常驻访问权限。</p>
+  <h2>5. 网络传输与共享</h2>
+  <p>扩展没有开发者服务器，不向开发者或第三方发送网页扫描结果、文档链接或下载记录，不出售数据，也不用于广告或用户画像。文档下载请求直接从用户浏览器发送到链接指向的网站。</p>
+  <h2>6. 用户责任</h2>
+  <p>用户应只下载其有权访问和使用的文档，并遵守来源网站条款、版权规则及适用法律。扩展会提示 HTTP 或带临时授权参数的链接，但不会替用户判断文件安全性。</p>
+  <h2>7. 联系方式</h2>
+  <p>如有隐私问题，请通过 Chrome 应用商店商品页面显示的开发者支持邮箱联系我们。</p>
+</main></body></html>

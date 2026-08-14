@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>视频资源检查器 隐私政策</title>
+  <style>
+    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-serif;max-width:880px;margin:40px auto;padding:0 24px;color:#243047;line-height:1.75}h1{color:#b91c1c}h2{margin-top:26px}section{background:#fef2f2;border:1px solid #fecaca;border-radius:12px;padding:18px}.muted{color:#64748b}code{background:#f1f5f9;padding:2px 5px;border-radius:4px}
+  </style>
+</head>
+<body>
+  <h1>视频资源检查器 隐私政策</h1>
+  <p class="muted">生效日期：2026-07-23　版本：2.0.0</p>
+  <section>本扩展是视频资源与播放清单诊断工具。不出售、上传或持久保存检测结果，不投放广告，不下载视频或音频。</section>
+  <h2>用途与处理</h2>
+  <p>内容脚本与 <code>webRequest</code> 在用户浏览期间识别直接视频文件和 HLS/DASH 播放清单的 URL、媒体类型、文件大小、视频分辨率、时长及页面标题。结果仅在扩展服务工作器的内存中按标签页暂存，导航、关闭标签页或浏览器回收工作器后即清除。</p>
+  <h2>清单分析与导出</h2>
+  <p>只有用户对 HLS/DASH 资源点击“分析清单”时，扩展才会向该资源的原始 URL 发起一次不携带凭据的读取请求，用于统计清晰度档位、片段、直播状态、加密和低延迟标记。扩展不读取媒体片段、不下载、合并、转码或解密内容。JSON 报告只在用户点击导出时保存到本地。</p>
+  <h2>网络与代码</h2>
+  <p>所有 JavaScript、HTML 和 CSS 均随扩展打包，不加载或执行远程代码。资源地址和诊断结果不会发送给开发者服务器或第三方分析服务。</p>
+  <h2>内容责任</h2>
+  <p>本扩展不绕过 DRM、付费墙或其他技术保护措施，不尝试解密或重组受保护媒体。</p>
+</body>
+</html>

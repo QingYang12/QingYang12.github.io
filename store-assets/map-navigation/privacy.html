@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>地图导航隐私政策</title>
+  <style>
+    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-serif;max-width:900px;margin:40px auto;padding:0 24px;color:#243047;line-height:1.75}
+    h1{color:#2563eb}h2{margin-top:28px;color:#334155}section{background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:18px;margin:16px 0}
+    code{background:#e2e8f0;padding:2px 5px;border-radius:4px}.muted{color:#64748b;font-size:14px}a{color:#2563eb}
+  </style>
+</head>
+<body>
+  <h1>地图导航隐私政策</h1>
+  <p class="muted">生效日期：2026-07-21　版本：1.0.2</p>
+  <section><strong>核心承诺</strong><p>本扩展不出售用户数据、不投放广告、不做跨站跟踪，也不把数据发送给开发者自有服务器。</p></section>
+
+  <h2>1. 单一用途</h2>
+  <p>在 Chrome 侧边栏中提供地图显示、地点搜索、当前位置定位和驾车路线规划。</p>
+
+  <h2>2. 处理的数据</h2>
+  <p>只有在用户主动点击“定位”，或在未填写起点时主动请求路线，扩展才调用浏览器定位功能。当前位置只在本次运行期间保存在内存中，不会写入本地存储，也不会在后台持续追踪。</p>
+  <p>用户提交地点搜索或路线规划时，搜索文字、起点、终点以及为完成路线请求所需的坐标会发送给下述地图服务。请勿在地点输入框中填写与导航无关的个人或机密信息。</p>
+
+  <h2>3. 外部地图服务</h2>
+  <ul>
+    <li><strong>OpenStreetMap</strong>：提供当前视野中的地图瓦片。</li>
+    <li><strong>Photon（Komoot）</strong>：把用户主动提交的地点文字转换为地图坐标。</li>
+    <li><strong>OSRM 公共路由服务</strong>：使用起点与终点坐标计算驾车路线。</li>
+  </ul>
+  <p>这些服务会按照各自的条款与隐私规则处理请求以及必要的网络信息（例如 IP 地址）。扩展不会把请求转发给开发者服务器。</p>
+
+  <h2>4. 权限用途</h2>
+  <ul>
+    <li><code>sidePanel</code>：在用户点击扩展工具栏图标时打开地图侧边栏。</li>
+    <li><code>geolocation</code>：仅在用户主动使用定位或当前位置路线功能时获取当前位置。</li>
+    <li>限定的地图服务域名：加载用户正在查看的地图、查询地点并计算路线。</li>
+  </ul>
+
+  <h2>5. 存储、共享与远程代码</h2>
+  <p>扩展不请求 <code>storage</code>、<code>tabs</code> 或 <code>scripting</code> 权限，不保存搜索记录、路线或位置，不出售数据，也不把数据用于广告、信用评估或与核心功能无关的用途。所有可执行 JavaScript 均包含在安装包内；网络只用于获取地图数据和接口结果，不会下载并执行远程代码。</p>
+
+  <h2>6. 删除与联系</h2>
+  <p>本扩展没有持久保存用户数据。关闭侧边栏会结束当前运行状态，卸载扩展会删除全部扩展文件。如有问题，请通过 Chrome 应用商店产品支持页面联系开发者。</p>
+</body>
+</html>

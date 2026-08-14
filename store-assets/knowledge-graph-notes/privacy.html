@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI 知识卡片与关系图谱笔记隐私政策</title>
+<style>body{max-width:900px;margin:42px auto;padding:0 24px;color:#28334b;background:#f4f5fb;font:15px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-serif}main{padding:30px;border:1px solid #dee1ef;border-radius:18px;background:#fff}h1{margin-top:0;color:#5155a8}h2{margin-top:27px;color:#383b7f}.summary{padding:15px 17px;border-left:4px solid #676bd6;background:#f0f1ff;border-radius:9px}.muted{color:#737b8e}code{background:#eff1f7;padding:2px 5px;border-radius:5px}</style>
+</head><body><main>
+<h1>AI 知识卡片与关系图谱笔记隐私政策</h1><p class="muted">生效日期：2026 年 8 月 13 日　版本：1.1.3</p>
+<p class="summary">笔记、文件夹、标签和关系图默认保存在当前浏览器；只有用户点击 AI 功能时才发送所需文本。</p>
+<h2>1. 本地数据</h2><p>笔记标题、正文、标签、文件夹结构、AI 配置和生成结果保存在当前浏览器。关系图在本地根据标签和关键词计算。用户可导入、导出、删除笔记或卸载扩展。</p>
+<h2>2. AI 功能</h2><p>点击 AI 续写或总结时，会发送当前笔记；点击整理全部时，会发送所选笔记集合的必要文本。免费模式通过 <code>test.wanghaonet.com</code> 调用 qwen3.7-plus。自己的 API 模式直接调用用户指定的提供商，Key 仅保存在本机。</p>
+<h2>3. CID、免费额度与安全记录</h2><p>扩展首次安装时随机生成一个 CID 和私有校验令牌，并通过 Chrome 的扩展本地存储保存在当前浏览器配置文件中。CID 不包含姓名、邮箱或电话号码。免费 AI 请求会发送应用标识、CID 和校验令牌；服务端还会处理来源 IP、日期和请求次数，用于免费额度、后续个性化服务、安全防护、运行统计和故障排查。扩展会把同一 CID 显式提交给实验分桶接口，并缓存对应的实验域、桶、槽位和分配版本，用于比较不同功能方案的效果。卸载扩展会清除本地 CID。</p>
+<h2>4. 权限</h2><p><code>storage</code> 权限仅用于持久保存随机 CID 和校验令牌。固定主机权限只用于免费服务；可选网站权限只在用户授权自己的 API 地址时使用。扩展不读取当前网页、浏览历史、Cookie、账号或未选择的本地文件。</p>
+<h2>5. 共享和出售</h2><p>AI 内容仅在提供用户请求的生成服务所必需的范围内交由网关和模型提供商处理。开发者不出售用户数据，不用于广告、信用评估或无关用途。</p>
+<h2>6. 联系方式</h2><p>有关隐私或服务端额度记录的问题，请通过 Chrome 应用商店商品页面的开发者支持邮箱联系我们。</p>
+</main></body></html>
