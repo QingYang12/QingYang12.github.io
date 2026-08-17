@@ -1,15 +1,15 @@
 <!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI 音乐创作坊 隐私政策</title><style>body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC',sans-serif;max-width:900px;margin:40px auto;padding:0 24px;color:#243047;line-height:1.75}h1{color:#1d4ed8}h2{margin-top:28px;color:#334155}section{background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:18px;margin:16px 0}code{background:#e2e8f0;padding:2px 5px;border-radius:4px}.muted{color:#64748b;font-size:14px}li{margin:5px 0}</style></head><body>
 <h1>AI 音乐创作坊 隐私政策</h1><p class="muted">生效日期：2026-08-17　版本：1.0</p>
 <section><strong>核心承诺</strong><p>本扩展不出售个人信息、不投放广告、不做跨站跟踪。创作历史与每日使用次数完全保存在你的浏览器本地，不上传到任何服务器。仅在生成音乐时将你主动输入的风格描述或歌词发送至开发者的音乐生成服务器。</p></section>
-<h2>1. 扩展用途</h2><p>为用户提供 AI 音乐创作工具：填写风格描述或歌词，选择男声/女声/纯音乐与输出格式，由 AI 生成原创音乐并提供试听、下载与本地创作历史管理。每位用户每天可免费生成 10 次。</p>
+<h2>1. 扩展用途</h2><p>为用户提供 AI 音乐创作工具：填写风格描述或歌词，选择男声/女声/纯音乐与输出格式，由开发者自有 GPU 机器上的本地 ACE-Step 模型生成原创音乐，并提供试听、下载与本地创作历史管理。每位用户每天可免费生成 10 次。</p>
 <h2>2. 本地处理与存储</h2><p>创作历史（风格描述、歌词、音频链接、生成时间）与每日使用次数保存在本机 <code>chrome.storage.local</code>，最多保留最近 50 条记录。这些数据不会上传，卸载扩展即全部删除。</p>
 <h2>3. 外部服务与数据传输</h2><ul>
-<li><strong>音乐生成服务器（test.wanghaonet.com）</strong>：生成音乐时发送你输入的风格描述/歌词以及声音、格式选项；AI 帮写功能发送你输入的待完善文本。服务器返回生成任务状态与音频文件链接。传输内容不包含姓名、邮箱、账号等任何个人信息。</li>
+<li><strong>音乐生成服务器（test.wanghaonet.com）</strong>：生成音乐时发送你输入的风格描述/歌词以及声音、格式选项，由开发者自有 GPU 机器上的本地 ACE-Step 模型生成，不调用任何第三方云服务。服务器返回生成任务状态与音频文件链接。传输内容不包含姓名、邮箱、账号等任何个人信息。</li>
 <li><strong>音频文件托管</strong>：生成的音频由服务器临时托管，扩展通过返回的链接试听与下载；链接可能随时间失效，建议及时保存到本地。</li>
 </ul>
 <h2>4. 权限用途</h2><ul>
 <li><code>storage</code>：保存创作历史与每日使用次数。</li>
-<li><code>https://test.wanghaonet.com/*</code>：调用音乐生成与 AI 帮写接口。</li>
+<li><code>https://test.wanghaonet.com/*</code>：调用音乐生成接口。</li>
 </ul>
 <h2>5. 不收集的内容</h2><p>本扩展不收集浏览历史、Cookie、账号凭据、精确位置或任何个人身份信息；不要求登录，不读取任何其他网站的内容。</p>
 <h2>6. 数据删除与联系</h2><p>在扩展页面内可删除单条或清空全部创作历史；卸载扩展即删除全部本地数据。服务器不保存用户身份，生成记录仅用于任务处理。如有隐私问题，请通过 Chrome Web Store 产品支持页面联系开发者。扩展安装包不加载或执行远程代码。</p>
