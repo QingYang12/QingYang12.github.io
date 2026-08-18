@@ -1,9 +1,50 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Cookie编辑器 · Cookie Studio 隐私政策</title><style>body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-serif;max-width:900px;margin:40px auto;padding:0 24px;color:#243047;line-height:1.75}h1{color:#1d4ed8}h2{margin-top:28px;color:#334155}section{background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:18px;margin:16px 0}code{background:#e2e8f0;padding:2px 5px;border-radius:4px}.muted{color:#64748b;font-size:14px}</style></head><body>
-<h1>Cookie编辑器 · Cookie Studio 隐私政策</h1><p class="muted">生效日期：2026-07-21　版本：1.0</p>
-<section><strong>核心承诺</strong><p>本扩展不出售或共享用户数据，不投放广告，不做跨站跟踪，不连接开发者服务器，也不加载远程代码。</p></section>
-<h2>1. 单一用途</h2><p>让用户查看并管理当前网站在浏览器中保存的 Cookie。</p>
-<h2>2. 数据处理</h2><p>Cookie 值可能包含登录状态等敏感信息。扩展只在用户设备上处理，不上传、不分析、不出售；导出文件仅在用户主动点击后生成。</p>
-<h2>3. 权限用途</h2><ul><li><code>cookies</code>：读取并修改用户当前访问网站的 Cookie。</li><li><code>tabs</code>：确定当前活动标签页的网址，以限定 Cookie 管理范围。</li><li><code>http://*/* 与 https://*/*</code>：Chrome 的 Cookie API 需要对应网站访问范围，插件只在用户当前打开的普通网页上操作。</li></ul>
-<h2>4. 数据保留和删除</h2><p>本地设置和记录保留到用户在插件内清除、清除 Chrome 扩展数据或卸载插件。开发者没有这些数据的副本。</p>
-<h2>5. 安全与第三方</h2><p>所有可执行代码随安装包提供。扩展不使用分析、广告、支付或云端采集服务。</p>
-<h2>6. 联系</h2><p>如有隐私问题，请通过 Chrome Web Store 产品支持页面联系开发者。</p></body></html>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cookie 透镜 · CookieLens 隐私政策</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC',sans-serif;max-width:900px;margin:40px auto;padding:0 24px;color:#2b2118;line-height:1.75}
+h1{color:#a2622a}
+h2{margin-top:28px;color:#4a3b2b}
+section{background:#faf5ee;border:1px solid #ecdfd0;border-radius:12px;padding:18px;margin:16px 0}
+code{background:#f3ece2;padding:2px 5px;border-radius:4px}
+.muted{color:#8a7a68;font-size:14px}
+li{margin:5px 0}
+</style>
+</head>
+<body>
+<h1>Cookie 透镜 · CookieLens 隐私政策</h1>
+<p class="muted">生效日期：2026-08-18　版本：1.1（随产品更名与功能更新）</p>
+
+<section><strong>核心承诺</strong><p>本扩展不收集、不出售、不共享任何个人信息；不投放广告、不做跨站跟踪、不加载任何远程代码、不发起任何网络请求。它只在用户主动打开时，读取并帮助清理"用户当前正在访问的网站"的 Cookie，全部操作在本地浏览器内完成。</p></section>
+
+<h2>1. 扩展用途</h2>
+<p>对当前网站的 Cookie 做"隐私体检"：查看与搜索该网站存放的 Cookie，按作用范围（仅本站独享 / 子域共享）与存续时长（会话级 / 长期）分类，识别存续超过半年的长期 Cookie，并提供单条删除、清理长期、清空本站与 JSON 导出功能。扩展不写入、不修改、不创建任何 Cookie。</p>
+
+<h2>2. 数据的读取与处理</h2>
+<ul>
+<li>扩展通过浏览器 <code>cookies</code> 接口读取当前网站的 Cookie 元数据（名称、域、路径、有效期等），仅用于在弹窗中展示和按用户指令删除。</li>
+<li>Cookie 值在界面上默认打码显示，仅在用户主动点击时展开。</li>
+<li>导出的 JSON 文件由浏览器直接保存到用户本地磁盘，不经过任何服务器。</li>
+<li>扩展不记录浏览历史，不保存任何数据（不使用本地存储），不采集任何标识信息。</li>
+</ul>
+
+<h2>3. 外部服务与数据传输</h2>
+<p>无。扩展不与开发者服务器或任何第三方通信，不发送分析或遥测数据，全部逻辑由随包分发的本地代码执行。</p>
+
+<h2>4. 权限用途</h2>
+<ul>
+<li><code>cookies</code>：读取与删除当前网站的 Cookie，这是本扩展唯一功能的必要条件。</li>
+<li><code>tabs</code>：确定用户当前正在访问的网页地址，以便针对该网站读取 Cookie；扩展不读取标签页的页面内容。</li>
+<li>主机权限（所有 http/https 网站）：Cookie 接口要求声明主机权限才能工作；扩展仅在用户主动打开弹窗时处理当前站点，不会在后台扫描或操作其他网站。</li>
+</ul>
+
+<h2>5. 保留、删除与安全</h2>
+<p>扩展本身不保留任何数据。删除操作直接作用于浏览器 Cookie 存储，立即生效且无法由扩展恢复；导出文件由用户自行保管，其中可能包含登录状态信息，请勿发送给他人。卸载扩展不会留下任何残留数据。</p>
+
+<h2>6. 儿童、变更与联系</h2>
+<p>本扩展不面向收集任何儿童个人信息。政策如有重大变更，将随扩展版本更新并修改本页生效日期。如有隐私问题，请通过 Chrome Web Store 产品支持页面联系开发者。</p>
+</body>
+</html>
