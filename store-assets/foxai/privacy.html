@@ -1,12 +1,21 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>FoxAI: Unified AI Workspace — Privacy Policy</title><style>body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-serif;max-width:850px;margin:42px auto;padding:0 24px;color:#243047;line-height:1.75}h1{color:#1d4ed8}h2{margin-top:28px;color:#334155}section{background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:18px;margin:16px 0}code{background:#e2e8f0;padding:2px 5px;border-radius:4px}.muted{color:#64748b;font-size:14px}</style></head><body>
-<h1>FoxAI: Unified AI Workspace — Privacy Policy</h1><p class="muted">Effective date: August 18, 2026 · Version 2.3</p>
-<section><strong>Our commitment</strong><p>FoxAI: Unified AI Workspace is a browser extension that provides unified access to multiple AI tools (chat, podcast generation, image editing, video workflows, and 3D content creation) through a side panel interface. We do not collect, store, or transmit any personal data.</p></section>
-<section><h2>Data Collection</h2><p><strong>We do not collect any personal data.</strong> All interactions with AI services happen directly between your browser and the AI providers you configure. No data passes through our servers.</p><ul><li>No user accounts or registration required</li><li>No analytics or tracking scripts</li><li>No telemetry or usage statistics</li><li>No cookies or local storage beyond what Chrome requires for extension settings</li></ul></section>
-<section><h2>Permissions Explained</h2><p>This extension requests the following permissions:</p><ul><li><code>sidePanel</code> — Display the FoxAI workspace in Chrome's side panel</li><li><code>storage</code> — Save your API configuration and preferences locally</li><li><code>tabs</code>, <code>activeTab</code> — Allow interaction with web pages for content extraction or sharing</li><li><code>&lt;all_urls&gt;</code> — Enable the extension to work on any webpage you visit</li></ul><p>All permissions are used solely for core functionality. No data is sent to third parties.</p></section>
-<section><h2>API Keys & Credentials</h2><p>If you configure external AI services (OpenAI, Claude, etc.), your API keys are stored locally in Chrome's extension storage. They are never transmitted to our servers or any third party except the respective AI provider when you make a request.</p></section>
-<section><h2>Content You Generate</h2><p>All content you create through FoxAI (chat messages, generated images, podcasts, 3D models) remains entirely under your control. We have no access to this content unless you explicitly choose to share it.</p></section>
-<section><h2>Third-Party Services</h2><p>FoxAI integrates with external AI providers. When you use these services, their respective privacy policies apply to the data you send them. We recommend reviewing the privacy policies of any AI service you connect to FoxAI.</p></section>
-<section><h2>Children's Privacy</h2><p>This extension does not knowingly collect information from children under 13. If you believe a child has provided us with personal information, please contact us.</p></section>
-<section><h2>Changes to This Policy</h2><p>We may update this privacy policy from time to time. Changes will be posted here with an updated effective date.</p></section>
-<section><h2>Contact</h2><p>For questions about this privacy policy, please contact us through the Chrome Web Store developer page.</p></section>
-</body></html>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>FoxAI · 网页阅读助手隐私政策</title>
+  <style>body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-serif;max-width:880px;margin:42px auto;padding:0 24px;color:#243047;line-height:1.75}h1{color:#4338ca}h2{margin-top:0;color:#334155;font-size:20px}section{background:#f8fafc;border:1px solid #e2e8f0;border-radius:14px;padding:20px;margin:16px 0}code{background:#e2e8f0;padding:2px 5px;border-radius:4px}.muted{color:#64748b;font-size:14px}li{margin:7px 0}</style>
+</head>
+<body>
+  <h1>FoxAI · 网页阅读助手隐私政策</h1>
+  <p class="muted">生效日期：2026 年 8 月 24 日 · 适用于扩展版本 3.0.0 及以上</p>
+  <section><h2>产品用途</h2><p>FoxAI · 网页阅读助手在 Chrome 侧边栏中帮助用户理解当前网页。扩展只在用户点击“读取当前页”后提取当前标签页的可见正文；如果用户已选择文字，则优先读取选中文本。</p></section>
+  <section><h2>处理的数据</h2><ul><li><strong>网站内容：</strong>用户主动读取的当前网页标题、可见正文或选中文本。当前网页 URL 只在本机用于显示来源域名，不随 AI 请求发送。</li><li><strong>用户输入：</strong>用户在侧边栏中输入的问题、AI 返回的回答，以及为保持上下文所需的最近对话内容。</li><li><strong>扩展客户端标识：</strong>随机生成、不直接包含姓名或联系方式的假名化 <code>cid</code> 和访问令牌，用于每日额度、服务安全和防止滥用。</li><li><strong>服务运行信息：</strong>请求时间、响应状态和额度使用情况等必要运行日志。</li></ul><p>扩展不会读取或收集密码、Cookie、表单字段、完整浏览历史、其他未主动读取的标签页内容、支付信息或精确位置。</p></section>
+  <section><h2>数据如何使用和传输</h2><p>网页上下文、用户问题和客户端标识会通过 HTTPS 发送到 <code>https://test.wanghaonet.com</code> 的 FoxAI 接口，仅用于生成用户请求的回答、计算每日免费额度、保障服务安全及排查故障。我们不出售、出租数据，也不将这些数据用于个性化广告或跨站追踪。</p></section>
+  <section><h2>本地存储</h2><p>扩展使用 Chrome 的本地扩展存储保存最近对话、随机客户端标识和访问令牌。用户可点击侧边栏中的“清空”删除本地对话；卸载扩展会删除该扩展的本地存储。客户端标识和令牌用于维持额度及安全控制。</p></section>
+  <section><h2>服务端保留与安全</h2><p>服务端可能在实现额度限制、防滥用、可靠性监控和故障排查所需的期限内保留必要运行日志。我们采用 HTTPS 传输和访问控制保护数据。请勿在提问中提交密码、银行卡号、身份证号码或其他不必要的敏感信息。</p></section>
+  <section><h2>权限说明</h2><ul><li><code>sidePanel</code>：显示网页阅读与问答界面。</li><li><code>storage</code>：在本机保存对话、客户端标识和访问令牌。</li><li><code>activeTab</code>：在用户主动打开扩展后临时访问当前标签页。</li><li><code>scripting</code>：点击“读取当前页”时提取当前页可见正文或选中文本。</li><li><code>https://test.wanghaonet.com/*</code>：调用 FoxAI AI 服务并读取额度信息。</li></ul></section>
+  <section><h2>第三方、儿童与政策变更</h2><p>扩展不会将数据出售给第三方。产品不以 13 岁以下儿童为目标。政策发生实质变化时，本页面会更新生效日期；重大变化将随扩展更新进行说明。</p></section>
+  <section><h2>联系与删除请求</h2><p>如需咨询、请求访问或删除与服务端运行记录有关的数据，请通过 Chrome 应用商店开发者支持渠道联系我们，并提供扩展中使用的客户端标识以便定位请求。</p></section>
+</body>
+</html>
