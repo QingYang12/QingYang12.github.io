@@ -3,19 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>FoxAI · 网页阅读助手隐私政策</title>
+  <title>FoxAI · 内容创作工作台隐私政策</title>
   <style>body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-serif;max-width:880px;margin:42px auto;padding:0 24px;color:#243047;line-height:1.75}h1{color:#4338ca}h2{margin-top:0;color:#334155;font-size:20px}section{background:#f8fafc;border:1px solid #e2e8f0;border-radius:14px;padding:20px;margin:16px 0}code{background:#e2e8f0;padding:2px 5px;border-radius:4px}.muted{color:#64748b;font-size:14px}li{margin:7px 0}</style>
 </head>
 <body>
-  <h1>FoxAI · 网页阅读助手隐私政策</h1>
-  <p class="muted">生效日期：2026 年 8 月 24 日 · 适用于扩展版本 3.0.0 及以上</p>
-  <section><h2>产品用途</h2><p>FoxAI · 网页阅读助手在 Chrome 侧边栏中帮助用户理解当前网页。扩展只在用户点击“读取当前页”后提取当前标签页的可见正文；如果用户已选择文字，则优先读取选中文本。</p></section>
-  <section><h2>处理的数据</h2><ul><li><strong>网站内容：</strong>用户主动读取的当前网页标题、可见正文或选中文本。当前网页 URL 只在本机用于显示来源域名，不随 AI 请求发送。</li><li><strong>用户输入：</strong>用户在侧边栏中输入的问题、AI 返回的回答，以及为保持上下文所需的最近对话内容。</li><li><strong>扩展客户端标识：</strong>随机生成、不直接包含姓名或联系方式的假名化 <code>cid</code> 和访问令牌，用于每日额度、服务安全和防止滥用。</li><li><strong>服务运行信息：</strong>请求时间、响应状态和额度使用情况等必要运行日志。</li></ul><p>扩展不会读取或收集密码、Cookie、表单字段、完整浏览历史、其他未主动读取的标签页内容、支付信息或精确位置。</p></section>
-  <section><h2>数据如何使用和传输</h2><p>网页上下文、用户问题和客户端标识会通过 HTTPS 发送到 <code>https://test.wanghaonet.com</code> 的 FoxAI 接口，仅用于生成用户请求的回答、计算每日免费额度、保障服务安全及排查故障。我们不出售、出租数据，也不将这些数据用于个性化广告或跨站追踪。</p></section>
-  <section><h2>本地存储</h2><p>扩展使用 Chrome 的本地扩展存储保存最近对话、随机客户端标识和访问令牌。用户可点击侧边栏中的“清空”删除本地对话；卸载扩展会删除该扩展的本地存储。客户端标识和令牌用于维持额度及安全控制。</p></section>
-  <section><h2>服务端保留与安全</h2><p>服务端可能在实现额度限制、防滥用、可靠性监控和故障排查所需的期限内保留必要运行日志。我们采用 HTTPS 传输和访问控制保护数据。请勿在提问中提交密码、银行卡号、身份证号码或其他不必要的敏感信息。</p></section>
-  <section><h2>权限说明</h2><ul><li><code>sidePanel</code>：显示网页阅读与问答界面。</li><li><code>storage</code>：在本机保存对话、客户端标识和访问令牌。</li><li><code>activeTab</code>：在用户主动打开扩展后临时访问当前标签页。</li><li><code>scripting</code>：点击“读取当前页”时提取当前页可见正文或选中文本。</li><li><code>https://test.wanghaonet.com/*</code>：调用 FoxAI AI 服务并读取额度信息。</li></ul></section>
+  <h1>FoxAI · 内容创作工作台隐私政策</h1>
+  <p class="muted">生效日期：2026 年 8 月 27 日 · 适用于扩展版本 4.0.0 及以上</p>
+  <section><h2>产品用途</h2><p>FoxAI · 内容创作工作台在 Chrome 侧边栏中提供网页阅读、图片编辑、视频裁剪、AI 短剧脚本、AI 播客脚本和基础 3D 场景制作。所有功能都在扩展界面内使用，不以安装或启动外部网页为主要用途。</p></section>
+  <section><h2>处理的数据</h2><ul><li><strong>网站内容：</strong>仅当用户点击“读取当前页”时，扩展读取当前标签页的标题、可见正文或用户选中的文字。网页 URL 只在本机用于判断页面类型和显示来源域名，不随 AI 请求发送。</li><li><strong>用户输入与 AI 输出：</strong>网页阅读问题、短剧主题与选项、播客主题与选项，以及 AI 针对这些请求返回的内容。</li><li><strong>扩展客户端标识：</strong>随机生成、不直接包含姓名、邮箱或电话的假名化 <code>cid</code> 和访问令牌，用于每日额度、服务安全和防止滥用。</li><li><strong>服务运行信息：</strong>请求时间、应用名称、响应状态和额度使用情况等必要运行日志。</li></ul><p>扩展不会读取或收集密码、Cookie、表单字段、完整浏览历史、支付信息或精确位置，也不会在后台自动读取其他标签页。</p></section>
+  <section><h2>本机处理的文件和场景</h2><ul><li>用户选择的图片只在浏览器内解码、调整和导出，不会上传至 FoxAI 服务器。</li><li>用户选择的视频只在浏览器内预览、裁剪录制和导出，不会上传至 FoxAI 服务器。</li><li>3D 几何体、材质、位置、旋转、缩放和导出的场景文件均在浏览器本地处理。</li><li>播客试听使用浏览器提供的本地语音合成功能；扩展不会把音频上传至 FoxAI 服务器。</li></ul></section>
+  <section><h2>数据如何使用和传输</h2><p>只有在用户主动使用 AI 功能时，相关网页文字、问题、短剧或播客创作参数、最近必要对话和客户端标识才会通过 HTTPS 发送到 <code>https://test.wanghaonet.com</code> 的 FoxAI 接口，用于生成用户请求的结果、计算每日免费额度、保障服务安全及排查故障。我们不出售、出租用户数据，不将其用于个性化广告、信用评估或跨站追踪。</p></section>
+  <section><h2>本地存储</h2><p>扩展使用 Chrome 本地扩展存储保存最近网页阅读对话、短剧与播客草稿、3D 场景、当前工作区、随机客户端标识和访问令牌。用户可在相应工作区清空对话、草稿或场景；卸载扩展会删除该扩展的本地存储。</p></section>
+  <section><h2>服务端保留与安全</h2><p>服务端可能在实现额度限制、防滥用、可靠性监控和故障排查所需的期限内保留必要运行日志。我们采用 HTTPS 传输和访问控制保护数据。请勿在 AI 输入中提交密码、银行卡号、身份证号码或其他不必要的敏感信息。</p></section>
+  <section><h2>权限说明</h2><ul><li><code>sidePanel</code>：在 Chrome 侧边栏展示六个内置工作区。</li><li><code>storage</code>：在本机保存对话、创作草稿、3D 场景、客户端标识和访问令牌。</li><li><code>activeTab</code>：在用户主动打开扩展并点击“读取当前页”后临时访问当前标签页。</li><li><code>scripting</code>：由“读取当前页”按钮直接调用，用于提取当前页可见正文或选中文字。</li><li><code>https://test.wanghaonet.com/*</code>：调用 FoxAI AI 服务并读取额度信息。</li></ul></section>
   <section><h2>第三方、儿童与政策变更</h2><p>扩展不会将数据出售给第三方。产品不以 13 岁以下儿童为目标。政策发生实质变化时，本页面会更新生效日期；重大变化将随扩展更新进行说明。</p></section>
-  <section><h2>联系与删除请求</h2><p>如需咨询、请求访问或删除与服务端运行记录有关的数据，请通过 Chrome 应用商店开发者支持渠道联系我们，并提供扩展中使用的客户端标识以便定位请求。</p></section>
+  <section><h2>联系与删除请求</h2><p>如需咨询、请求访问或删除与服务端运行记录有关的数据，请通过 Chrome 应用商店开发者支持渠道联系我们，并提供扩展中显示的客户端标识以便定位请求。</p></section>
 </body>
 </html>
